@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:padding="40px"
+        android:text="Saptak calling Rini!"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/editTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter input"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/txtMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnHello"
+        />
+
+    <Button
+        android:id="@+id/btnHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button"
+        app:layout_constraintTop_toBottomOf="@+id/editTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/changePageBtn"
+         />
+
+    <Button
+        android:id="@+id/changePageBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to Page 2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHello"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteY="645dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
