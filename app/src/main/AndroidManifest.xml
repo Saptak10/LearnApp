@@ -13,49 +13,49 @@
         android:theme="@style/Theme.LearnApp"
         tools:targetApi="31">
         <activity
-            android:name=".GridView"
+            android:name=".layouts.GridView"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ListView"
+            android:name=".layouts.ListView"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".WebView"
+            android:name=".layouts.WebView"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".TableLayout"
+            android:name=".layouts.TableLayout"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".FrameLayout"
+            android:name=".layouts.FrameLayout"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".RelativeLayout"
+            android:name=".layouts.RelativeLayout"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".LinearLayout"
+            android:name=".layouts.LinearLayout"
             android:exported="true">
 
             <!-- <intent-filter> -->
